@@ -1,0 +1,25 @@
+// TEMPORARY SIMPLE RULES FOR TESTING
+// Use these rules temporarily to fix the permissions error
+// Replace with more secure rules later
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Temporary: Allow all authenticated users to read/write everything
+    match /{document=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
+
+// INSTRUCTIONS TO FIX THE ERROR:
+// 1. Go to Firebase Console (https://console.firebase.google.com)
+// 2. Select your project
+// 3. Click "Firestore Database" in left sidebar
+// 4. Click "Rules" tab
+// 5. Copy and paste the rules above
+// 6. Click "Publish"
+// 7. The permissions error should be fixed immediately
+
+// NOTE: These are permissive rules for testing.
+// Use the rules in firestore-rules.txt for production with proper role-based access control.
