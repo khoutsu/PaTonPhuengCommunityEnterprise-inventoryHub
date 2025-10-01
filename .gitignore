@@ -18,7 +18,6 @@ firebase-debug.log
 # Build outputs
 dist/
 build/
-
 # IDE
 .vscode/
 .idea/

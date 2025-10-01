@@ -1,88 +1,13 @@
-# E-commerce Warehouse Management System
-
-A full-stack application for managing e-commerce warehouse operations, built with Next.js frontend and Node.js/Express backend.
-
-## Project Structure
-
-```
-Ecom-Warehouse/
-├── frontend/          # Next.js frontend application
-│   ├── app/          # Next.js 13+ app directory
-│   ├── public/       # Static assets
-│   └── package.json  # Frontend dependencies
-└── backend/          # Node.js/Express API
-    ├── routes/       # API route handlers
-    ├── models/       # Database models
-    ├── controllers/  # Business logic
-    ├── middleware/   # Custom middleware
-    └── package.json  # Backend dependencies
-```
-
-## Getting Started
-
-### Prerequisites
-- Node.js (v14 or higher)
-
-- npm or yarn
-
-### Installation
-
-1. Clone the repository and navigate to the project directory
-
-2. Install backend dependencies:
-   ```bash
-   cd backend
-   npm install
-   ```
-
-3. Install frontend dependencies:
-   ```bash
-   cd ../frontend
-   npm install
-   ```
-
-4. Set up environment variables:
-   ```bash
-   cd ../backend
-   cp .env.example .env
-   # Edit .env with your configuration
-   ```
-
-### Running the Application
-
-1. Start the backend server:
-   ```bash
-   cd backend
-   npm run dev
-   ```
-   Backend will run on `http://localhost:5000`
-
-2. Start the frontend development server:
-   ```bash
-   cd frontend
-   npm run dev
-   ```
-   Frontend will run on `http://localhost:3000`
-
-## Features
-
-- **Frontend (Next.js)**
-  - Modern React with TypeScript
-  - Server-side rendering
-  - Responsive design
-  - Real-time updates
-
-- **Backend (Node.js/Express)**
-  - RESTful API
-  - User authentication
-  - Product management
-  - Inventory tracking
-  - Order processing
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test your changes
-5. Submit a pull request
+Install package
+frontend Installation Commands:
+npm install next@15.4.4 react@19.1.0 react-dom@19.1.0 typescript
+npm install firebase@^12.0.0
+npm install recharts@^3.1.2 jspdf@^3.0.2 jspdf-autotable@^5.0.2 xlsx@^0.18.5 file-saver@^2.0.5
+npm install tailwindcss@^4 @tailwindcss/postcss@^4
+npm install --save-dev @types/file-saver@^2.0.7 @types/node@^20 @types/react@^19 @types/react-dom@^19
+Backend Installation Commands:
+npm install express@^4.18.2 dotenv@^16.3.1
+npm install firebase-admin@^12.7.0
+npm install cors@^2.8.5 helmet@^7.1.0 express-rate-limit@^7.5.1 express-validator@^7.0.1 morgan@^1.10.0
+npm install bcryptjs@^2.4.3 jsonwebtoken@^9.0.2
+npm install --save-dev nodemon@^3.0.2
