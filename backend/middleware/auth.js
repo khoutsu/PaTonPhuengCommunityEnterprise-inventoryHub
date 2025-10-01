@@ -1,8 +1,13 @@
 const admin = require('firebase-admin');
 
 /**
- * Authentication Middleware
+ * Firebase Authentication Middleware
  * Verifies Firebase ID token and adds user info to request object
+ * 
+ * NOTE: For JWT authentication or flexible auth (both Firebase + JWT),
+ * use the middleware from './jwtAuth.js':
+ * - jwtAuthMiddleware: JWT tokens only
+ * - flexibleAuthMiddleware: Both Firebase ID tokens and JWT tokens
  */
 const authMiddleware = async (req, res, next) => {
   try {
