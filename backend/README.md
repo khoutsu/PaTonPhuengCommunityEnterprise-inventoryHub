@@ -1,74 +1,13 @@
-# E-commerce Warehouse Backend
-
-A Node.js/Express.js REST API for managing e-commerce warehouse operations.
-
-## Features
-
-- User Authentication (Registration/Login)
-- Product Management
-- Inventory Tracking
-- Order Processing
-- User Management
-
-## Getting Started
-
-### Prerequisites
-- Node.js (v14 or higher)
-- MongoDB
-
-### Installation
-
-1. Navigate to the backend directory:
-   ```bash
-   cd backend
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Create environment file:
-   ```bash
-   cp .env.example .env
-   ```
-
-4. Update the `.env` file with your configuration
-
-5. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-The API will be available at `http://localhost:5000`
-
-## API Endpoints
-
-### Authentication
-- `GET /api/auth` - Test auth route
-- `POST /api/auth/register` - Register user
-- `POST /api/auth/login` - Login user
-
-### Products
-- `GET /api/products` - Get all products
-- `GET /api/products/:id` - Get product by ID
-- `POST /api/products` - Create product
-- `PUT /api/products/:id` - Update product
-- `DELETE /api/products/:id` - Delete product
-
-### Inventory
-- `GET /api/inventory` - Get inventory status
-- `POST /api/inventory/update` - Update inventory
-- `GET /api/inventory/low-stock` - Get low stock items
-
-### Orders
-- `GET /api/orders` - Get all orders
-- `GET /api/orders/:id` - Get order by ID
-- `POST /api/orders` - Create order
-- `PUT /api/orders/:id` - Update order
-
-### Users
-- `GET /api/users` - Get all users
-- `GET /api/users/:id` - Get user by ID
-- `PUT /api/users/:id` - Update user
-- `DELETE /api/users/:id` - Delete user
+Install package<br>
+frontend Installation Commands:<br>
+npm install next@15.4.4 react@19.1.0 react-dom@19.1.0 typescript<br>
+npm install firebase@^12.0.0<br>
+npm install recharts@^3.1.2 jspdf@^3.0.2 jspdf-autotable@^5.0.2 xlsx@^0.18.5 file-saver@^2.0.5<br>
+npm install tailwindcss@^4 @tailwindcss/postcss@^4<br>
+npm install --save-dev @types/file-saver@^2.0.7 @types/node@^20 @types/react@^19 @types/react-dom@^19<br>
+Backend Installation Commands:<br>
+npm install express@^4.18.2 dotenv@^16.3.1<br>
+npm install firebase-admin@^12.7.0<br>
+npm install cors@^2.8.5 helmet@^7.1.0 express-rate-limit@^7.5.1 express-validator@^7.0.1 morgan@^1.10.0<br>
+npm install bcryptjs@^2.4.3 jsonwebtoken@^9.0.2<br>
+npm install --save-dev nodemon@^3.0.2<br>
